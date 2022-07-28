@@ -14,6 +14,10 @@ app.get("/another", (req, res) => {
     res.send("It's still working")
 });
 
+app.delete('/delete-one', (req, res){
+    Array.splice(3,1)
+})
+
 exports.hello = functions.https.onRequest((req, res) =>{
     res.send('Im on firebase')
 });
