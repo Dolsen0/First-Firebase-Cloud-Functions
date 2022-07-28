@@ -10,7 +10,6 @@ app.get("/test", (req, res) => {
     res.send("Passed the test")
 });
 
-
 app.get("/another", (req, res) => {
     res.send("It's still working")
 });
