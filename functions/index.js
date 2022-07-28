@@ -14,6 +14,10 @@ app.get("/another", (req, res) => {
     res.send("It's still working")
 });
 
+app.get("/", (req, res) =>{
+    res.send("sending all items")
+})
+
 exports.hello = functions.https.onRequest((req, res) =>{
     res.send('Im on firebase')
 });
