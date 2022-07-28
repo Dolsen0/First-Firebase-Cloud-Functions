@@ -14,7 +14,7 @@ app.get("/another", (req, res) => {
     res.send("It's still working")
 });
 
-app.delete('/delete-one', (req, res){
+app.delete('/delete-one', (req, res) => {
     Array.splice(3,1)
 })
 
